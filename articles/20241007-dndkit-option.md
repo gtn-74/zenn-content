@@ -6,8 +6,6 @@ topics: [dndkit, React]
 published: false
 ---
 
-<!-- # swagger "Authorize" の使い方 -->
-
 ## はじめに
 
 この記事では、dndkit を用いてドロップ要素へドラックで移動できた Item へ、新たにクリックイベントを追加する方法を紹介しています。
