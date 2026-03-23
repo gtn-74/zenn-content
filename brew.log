@@ -1,0 +1,2875 @@
+gtn74@gitani ~ % brew deps --tree --installed
+Warning: `brew deps` is not the actual runtime dependencies because --tree was passed!
+This means dependencies may differ from a formula's declared dependencies.
+Hide these hints with `HOMEBREW_NO_ENV_HINTS=1` (see `man brew`).
+abseil
+
+aom
+├── jpeg-xl
+│   ├── brotli
+│   ├── giflib
+│   ├── highway
+│   ├── imath
+│   ├── jpeg-turbo
+│   ├── libpng
+│   ├── little-cms2
+│   │   ├── jpeg-turbo
+│   │   └── libtiff
+│   │       ├── jpeg-turbo
+│   │       ├── xz
+│   │       └── zstd
+│   │           ├── lz4
+│   │           └── xz
+│   ├── openexr
+│   │   ├── imath
+│   │   ├── libdeflate
+│   │   └── openjph
+│   │       └── libtiff
+│   │           ├── jpeg-turbo
+│   │           ├── xz
+│   │           └── zstd
+│   │               ├── lz4
+│   │               └── xz
+│   └── webp
+│       ├── giflib
+│       ├── jpeg-turbo
+│       ├── libpng
+│       └── libtiff
+│           ├── jpeg-turbo
+│           ├── xz
+│           └── zstd
+│               ├── lz4
+│               └── xz
+└── libvmaf
+
+apr
+
+apr-util
+├── apr
+└── openssl@3
+    └── ca-certificates
+
+argon2
+
+autoconf
+└── m4
+
+bash-completion
+
+boost
+├── icu4c@78
+├── xz
+└── zstd
+    ├── lz4
+    └── xz
+
+brotli
+
+c-ares
+
+ca-certificates
+
+cairo
+├── fontconfig
+│   ├── freetype
+│   │   └── libpng
+│   └── gettext
+│       └── libunistring
+├── freetype
+│   └── libpng
+├── glib
+│   ├── pcre2
+│   └── gettext
+│       └── libunistring
+├── libpng
+├── libx11
+│   ├── libxcb
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+├── libxcb
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+├── libxext
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── libxrender
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   └── xorgproto
+├── lzo
+├── pixman
+└── gettext
+    └── libunistring
+
+capstone
+└── gettext
+    └── libunistring
+
+cloc
+
+cocoapods
+└── ruby
+    ├── libyaml
+    └── openssl@3
+        └── ca-certificates
+
+curl
+├── brotli
+├── libnghttp2
+├── libnghttp3
+├── libngtcp2
+│   └── openssl@3
+│       └── ca-certificates
+├── libssh2
+│   └── openssl@3
+│       └── ca-certificates
+├── openssl@3
+│   └── ca-certificates
+├── rtmpdump
+│   └── openssl@3
+│       └── ca-certificates
+└── zstd
+    ├── lz4
+    └── xz
+
+double-conversion
+
+dtc
+
+edencommon
+├── boost
+│   ├── icu4c@78
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fb303
+│   ├── fbthrift
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── wangle
+│   │   │   ├── double-conversion
+│   │   │   ├── fizz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── xxhash
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   └── openssl@3
+│       └── ca-certificates
+├── fbthrift
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── wangle
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── xxhash
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+└── openssl@3
+    └── ca-certificates
+
+fb303
+├── fbthrift
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── wangle
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── xxhash
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fizz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libsodium
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+└── openssl@3
+    └── ca-certificates
+
+fbthrift
+├── double-conversion
+├── fizz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libsodium
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+├── openssl@3
+│   └── ca-certificates
+├── wangle
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── xxhash
+└── zstd
+    ├── lz4
+    └── xz
+
+fizz
+├── double-conversion
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+├── libsodium
+├── openssl@3
+│   └── ca-certificates
+└── zstd
+    ├── lz4
+    └── xz
+
+fmt
+
+folly
+├── boost
+│   ├── icu4c@78
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── double-conversion
+├── fmt
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@3
+│       └── ca-certificates
+├── libsodium
+├── lz4
+├── openssl@3
+│   └── ca-certificates
+├── snappy
+├── xz
+└── zstd
+    ├── lz4
+    └── xz
+
+fontconfig
+├── freetype
+│   └── libpng
+└── gettext
+    └── libunistring
+
+freetds
+├── openssl@3
+│   └── ca-certificates
+└── unixodbc
+    └── libtool
+        └── m4
+
+freetype
+└── libpng
+
+fzf
+
+gd
+├── fontconfig
+│   ├── freetype
+│   │   └── libpng
+│   └── gettext
+│       └── libunistring
+├── freetype
+│   └── libpng
+├── jpeg-turbo
+├── libavif
+│   ├── aom
+│   │   ├── jpeg-xl
+│   │   │   ├── brotli
+│   │   │   ├── giflib
+│   │   │   ├── highway
+│   │   │   ├── imath
+│   │   │   ├── jpeg-turbo
+│   │   │   ├── libpng
+│   │   │   ├── little-cms2
+│   │   │   │   ├── jpeg-turbo
+│   │   │   │   └── libtiff
+│   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── xz
+│   │   │   │       └── zstd
+│   │   │   │           ├── lz4
+│   │   │   │           └── xz
+│   │   │   ├── openexr
+│   │   │   │   ├── imath
+│   │   │   │   ├── libdeflate
+│   │   │   │   └── openjph
+│   │   │   │       └── libtiff
+│   │   │   │           ├── jpeg-turbo
+│   │   │   │           ├── xz
+│   │   │   │           └── zstd
+│   │   │   │               ├── lz4
+│   │   │   │               └── xz
+│   │   │   └── webp
+│   │   │       ├── giflib
+│   │   │       ├── jpeg-turbo
+│   │   │       ├── libpng
+│   │   │       └── libtiff
+│   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
+│   │   │           └── zstd
+│   │   │               ├── lz4
+│   │   │               └── xz
+│   │   └── libvmaf
+│   ├── dav1d
+│   ├── jpeg-turbo
+│   └── libpng
+├── libpng
+├── libtiff
+│   ├── jpeg-turbo
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+└── webp
+    ├── giflib
+    ├── jpeg-turbo
+    ├── libpng
+    └── libtiff
+        ├── jpeg-turbo
+        ├── xz
+        └── zstd
+            ├── lz4
+            └── xz
+
+gettext
+└── libunistring
+
+gflags
+
+gh
+
+giflib
+
+git
+├── gettext
+│   └── libunistring
+└── pcre2
+
+glib
+├── pcre2
+└── gettext
+    └── libunistring
+
+glog
+└── gflags
+
+gmp
+
+gnutls
+├── ca-certificates
+├── gmp
+├── libidn2
+│   ├── libunistring
+│   └── gettext
+│       └── libunistring
+├── libtasn1
+├── libunistring
+├── nettle
+│   └── gmp
+├── p11-kit
+│   ├── ca-certificates
+│   └── libtasn1
+├── unbound
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libnghttp2
+│   └── openssl@3
+│       └── ca-certificates
+└── gettext
+    └── libunistring
+
+go
+
+graphite2
+
+harfbuzz
+├── cairo
+│   ├── fontconfig
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── pcre2
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── libpng
+│   ├── libx11
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   └── xorgproto
+│   ├── libxcb
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   ├── libxext
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── libxrender
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   └── xorgproto
+│   ├── lzo
+│   ├── pixman
+│   └── gettext
+│       └── libunistring
+├── freetype
+│   └── libpng
+├── glib
+│   ├── pcre2
+│   └── gettext
+│       └── libunistring
+├── graphite2
+└── icu4c@78
+
+highway
+
+httpd
+├── apr
+├── apr-util
+│   ├── apr
+│   └── openssl@3
+│       └── ca-certificates
+├── brotli
+├── libnghttp2
+├── openssl@3
+│   └── ca-certificates
+└── pcre2
+
+hugo
+
+icu4c@76
+
+icu4c@77
+
+imath
+
+jpeg-turbo
+
+jpeg-xl
+├── brotli
+├── giflib
+├── highway
+├── imath
+├── jpeg-turbo
+├── libpng
+├── little-cms2
+│   ├── jpeg-turbo
+│   └── libtiff
+│       ├── jpeg-turbo
+│       ├── xz
+│       └── zstd
+│           ├── lz4
+│           └── xz
+├── openexr
+│   ├── imath
+│   ├── libdeflate
+│   └── openjph
+│       └── libtiff
+│           ├── jpeg-turbo
+│           ├── xz
+│           └── zstd
+│               ├── lz4
+│               └── xz
+└── webp
+    ├── giflib
+    ├── jpeg-turbo
+    ├── libpng
+    └── libtiff
+        ├── jpeg-turbo
+        ├── xz
+        └── zstd
+            ├── lz4
+            └── xz
+
+kiro
+
+krb5
+└── openssl@3
+    └── ca-certificates
+
+libavif
+├── aom
+│   ├── jpeg-xl
+│   │   ├── brotli
+│   │   ├── giflib
+│   │   ├── highway
+│   │   ├── imath
+│   │   ├── jpeg-turbo
+│   │   ├── libpng
+│   │   ├── little-cms2
+│   │   │   ├── jpeg-turbo
+│   │   │   └── libtiff
+│   │   │       ├── jpeg-turbo
+│   │   │       ├── xz
+│   │   │       └── zstd
+│   │   │           ├── lz4
+│   │   │           └── xz
+│   │   ├── openexr
+│   │   │   ├── imath
+│   │   │   ├── libdeflate
+│   │   │   └── openjph
+│   │   │       └── libtiff
+│   │   │           ├── jpeg-turbo
+│   │   │           ├── xz
+│   │   │           └── zstd
+│   │   │               ├── lz4
+│   │   │               └── xz
+│   │   └── webp
+│   │       ├── giflib
+│   │       ├── jpeg-turbo
+│   │       ├── libpng
+│   │       └── libtiff
+│   │           ├── jpeg-turbo
+│   │           ├── xz
+│   │           └── zstd
+│   │               ├── lz4
+│   │               └── xz
+│   └── libvmaf
+├── dav1d
+├── jpeg-turbo
+└── libpng
+
+libdeflate
+
+libevent
+└── openssl@3
+    └── ca-certificates
+
+libidn2
+├── libunistring
+└── gettext
+    └── libunistring
+
+libnghttp2
+
+libpng
+
+libpq
+├── icu4c@78
+├── krb5
+│   └── openssl@3
+│       └── ca-certificates
+└── openssl@3
+    └── ca-certificates
+
+libslirp
+└── glib
+    ├── pcre2
+    └── gettext
+        └── libunistring
+
+libsodium
+
+libssh
+└── openssl@3
+    └── ca-certificates
+
+libssh2
+└── openssl@3
+    └── ca-certificates
+
+libtasn1
+
+libtiff
+├── jpeg-turbo
+├── xz
+└── zstd
+    ├── lz4
+    └── xz
+
+libtool
+└── m4
+
+libunistring
+
+libusb
+
+libuv
+
+libvmaf
+
+libvterm
+
+libx11
+├── libxcb
+│   ├── libxau
+│   │   └── xorgproto
+│   └── libxdmcp
+│       └── xorgproto
+└── xorgproto
+
+libxau
+└── xorgproto
+
+libxcb
+├── libxau
+│   └── xorgproto
+└── libxdmcp
+    └── xorgproto
+
+libxdmcp
+└── xorgproto
+
+libxext
+├── libx11
+│   ├── libxcb
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
+libxrender
+├── libx11
+│   ├── libxcb
+│   │   ├── libxau
+│   │   │   └── xorgproto
+│   │   └── libxdmcp
+│   │       └── xorgproto
+│   └── xorgproto
+└── xorgproto
+
+libyaml
+
+libzip
+├── xz
+└── zstd
+    ├── lz4
+    └── xz
+
+little-cms2
+├── jpeg-turbo
+└── libtiff
+    ├── jpeg-turbo
+    ├── xz
+    └── zstd
+        ├── lz4
+        └── xz
+
+lpeg
+
+luajit
+
+luv
+└── libuv
+
+lz4
+
+lzo
+
+m4
+
+mise
+└── usage
+
+mpdecimal
+
+msgpack
+
+mvfst
+├── double-conversion
+├── fizz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libsodium
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+├── libsodium
+└── openssl@3
+    └── ca-certificates
+
+mysql
+├── abseil
+├── icu4c@78
+├── lz4
+├── openssl@3
+│   └── ca-certificates
+├── protobuf
+│   └── abseil
+├── zlib
+└── zstd
+    ├── lz4
+    └── xz
+
+nanobot-ai/tap/nanobot
+
+ncurses
+
+neovim
+├── tree-sitter@0.25
+├── gettext
+│   └── libunistring
+├── libuv
+├── lpeg
+├── luajit
+├── luv
+│   └── libuv
+├── unibilium
+└── utf8proc
+
+net-snmp
+└── openssl@3
+    └── ca-certificates
+
+nettle
+└── gmp
+
+node
+├── brotli
+├── c-ares
+├── icu4c@78
+├── libnghttp2
+├── libnghttp3
+├── libngtcp2
+│   └── openssl@3
+│       └── ca-certificates
+├── libuv
+├── openssl@3
+│   └── ca-certificates
+├── simdjson
+├── sqlite
+│   └── readline
+├── uvwasi
+│   └── libuv
+└── zstd
+    ├── lz4
+    └── xz
+
+nvm
+
+oniguruma
+
+openexr
+├── imath
+├── libdeflate
+└── openjph
+    └── libtiff
+        ├── jpeg-turbo
+        ├── xz
+        └── zstd
+            ├── lz4
+            └── xz
+
+openjdk@21
+├── freetype
+│   └── libpng
+├── giflib
+├── harfbuzz
+│   ├── cairo
+│   │   ├── fontconfig
+│   │   │   ├── freetype
+│   │   │   │   └── libpng
+│   │   │   └── gettext
+│   │   │       └── libunistring
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   ├── glib
+│   │   │   ├── pcre2
+│   │   │   └── gettext
+│   │   │       └── libunistring
+│   │   ├── libpng
+│   │   ├── libx11
+│   │   │   ├── libxcb
+│   │   │   │   ├── libxau
+│   │   │   │   │   └── xorgproto
+│   │   │   │   └── libxdmcp
+│   │   │   │       └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxcb
+│   │   │   ├── libxau
+│   │   │   │   └── xorgproto
+│   │   │   └── libxdmcp
+│   │   │       └── xorgproto
+│   │   ├── libxext
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── libxrender
+│   │   │   ├── libx11
+│   │   │   │   ├── libxcb
+│   │   │   │   │   ├── libxau
+│   │   │   │   │   │   └── xorgproto
+│   │   │   │   │   └── libxdmcp
+│   │   │   │   │       └── xorgproto
+│   │   │   │   └── xorgproto
+│   │   │   └── xorgproto
+│   │   ├── lzo
+│   │   ├── pixman
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── freetype
+│   │   └── libpng
+│   ├── glib
+│   │   ├── pcre2
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── graphite2
+│   └── icu4c@78
+├── jpeg-turbo
+├── libpng
+└── little-cms2
+    ├── jpeg-turbo
+    └── libtiff
+        ├── jpeg-turbo
+        ├── xz
+        └── zstd
+            ├── lz4
+            └── xz
+
+openldap
+└── openssl@3
+    └── ca-certificates
+
+openssl@3
+└── ca-certificates
+
+p11-kit
+├── ca-certificates
+└── libtasn1
+
+pcre2
+
+php
+├── apr
+├── apr-util
+│   ├── apr
+│   └── openssl@3
+│       └── ca-certificates
+├── argon2
+├── autoconf
+│   └── m4
+├── curl
+│   ├── brotli
+│   ├── libnghttp2
+│   ├── libnghttp3
+│   ├── libngtcp2
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libssh2
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── rtmpdump
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── freetds
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── unixodbc
+│       └── libtool
+│           └── m4
+├── gd
+│   ├── fontconfig
+│   │   ├── freetype
+│   │   │   └── libpng
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── freetype
+│   │   └── libpng
+│   ├── jpeg-turbo
+│   ├── libavif
+│   │   ├── aom
+│   │   │   ├── jpeg-xl
+│   │   │   │   ├── brotli
+│   │   │   │   ├── giflib
+│   │   │   │   ├── highway
+│   │   │   │   ├── imath
+│   │   │   │   ├── jpeg-turbo
+│   │   │   │   ├── libpng
+│   │   │   │   ├── little-cms2
+│   │   │   │   │   ├── jpeg-turbo
+│   │   │   │   │   └── libtiff
+│   │   │   │   │       ├── jpeg-turbo
+│   │   │   │   │       ├── xz
+│   │   │   │   │       └── zstd
+│   │   │   │   │           ├── lz4
+│   │   │   │   │           └── xz
+│   │   │   │   ├── openexr
+│   │   │   │   │   ├── imath
+│   │   │   │   │   ├── libdeflate
+│   │   │   │   │   └── openjph
+│   │   │   │   │       └── libtiff
+│   │   │   │   │           ├── jpeg-turbo
+│   │   │   │   │           ├── xz
+│   │   │   │   │           └── zstd
+│   │   │   │   │               ├── lz4
+│   │   │   │   │               └── xz
+│   │   │   │   └── webp
+│   │   │   │       ├── giflib
+│   │   │   │       ├── jpeg-turbo
+│   │   │   │       ├── libpng
+│   │   │   │       └── libtiff
+│   │   │   │           ├── jpeg-turbo
+│   │   │   │           ├── xz
+│   │   │   │           └── zstd
+│   │   │   │               ├── lz4
+│   │   │   │               └── xz
+│   │   │   └── libvmaf
+│   │   ├── dav1d
+│   │   ├── jpeg-turbo
+│   │   └── libpng
+│   ├── libpng
+│   ├── libtiff
+│   │   ├── jpeg-turbo
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   └── webp
+│       ├── giflib
+│       ├── jpeg-turbo
+│       ├── libpng
+│       └── libtiff
+│           ├── jpeg-turbo
+│           ├── xz
+│           └── zstd
+│               ├── lz4
+│               └── xz
+├── gmp
+├── libpq
+│   ├── icu4c@78
+│   ├── krb5
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   └── openssl@3
+│       └── ca-certificates
+├── libsodium
+├── libzip
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── net-snmp
+│   └── openssl@3
+│       └── ca-certificates
+├── oniguruma
+├── openldap
+│   └── openssl@3
+│       └── ca-certificates
+├── openssl@3
+│   └── ca-certificates
+├── pcre2
+├── sqlite
+│   └── readline
+├── tidy-html5
+├── unixodbc
+│   └── libtool
+│       └── m4
+└── gettext
+    └── libunistring
+
+pipx
+└── python@3.14
+    ├── mpdecimal
+    ├── openssl@3
+    │   └── ca-certificates
+    ├── sqlite
+    │   └── readline
+    ├── xz
+    └── zstd
+        ├── lz4
+        └── xz
+
+pixman
+
+pkgconf
+
+pnpm
+
+postgresql@14
+├── icu4c@78
+├── krb5
+│   └── openssl@3
+│       └── ca-certificates
+├── lz4
+├── openssl@3
+│   └── ca-certificates
+└── readline
+
+protobuf@29
+└── abseil
+
+pyenv
+├── autoconf
+│   └── m4
+├── openssl@3
+│   └── ca-certificates
+├── pkgconf
+└── readline
+
+python@3.12
+├── mpdecimal
+├── openssl@3
+│   └── ca-certificates
+├── sqlite
+│   └── readline
+└── xz
+
+python@3.13
+├── mpdecimal
+├── openssl@3
+│   └── ca-certificates
+├── sqlite
+│   └── readline
+└── xz
+
+qemu
+├── capstone
+│   └── gettext
+│       └── libunistring
+├── dtc
+├── glib
+│   ├── pcre2
+│   └── gettext
+│       └── libunistring
+├── gnutls
+│   ├── ca-certificates
+│   ├── gmp
+│   ├── libidn2
+│   │   ├── libunistring
+│   │   └── gettext
+│   │       └── libunistring
+│   ├── libtasn1
+│   ├── libunistring
+│   ├── nettle
+│   │   └── gmp
+│   ├── p11-kit
+│   │   ├── ca-certificates
+│   │   └── libtasn1
+│   ├── unbound
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libnghttp2
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   └── gettext
+│       └── libunistring
+├── jpeg-turbo
+├── libpng
+├── libslirp
+│   └── glib
+│       ├── pcre2
+│       └── gettext
+│           └── libunistring
+├── libssh
+│   └── openssl@3
+│       └── ca-certificates
+├── libusb
+├── lzo
+├── ncurses
+├── nettle
+│   └── gmp
+├── pixman
+├── snappy
+├── vde
+└── zstd
+    ├── lz4
+    └── xz
+
+rbenv
+└── ruby-build
+    ├── autoconf
+    │   └── m4
+    ├── libyaml
+    ├── openssl@3
+    │   └── ca-certificates
+    ├── pkgconf
+    └── readline
+
+readline
+
+rtmpdump
+└── openssl@3
+    └── ca-certificates
+
+ruby
+├── libyaml
+└── openssl@3
+    └── ca-certificates
+
+ruby-build
+├── autoconf
+│   └── m4
+├── libyaml
+├── openssl@3
+│   └── ca-certificates
+├── pkgconf
+└── readline
+
+snappy
+
+sqlite
+└── readline
+
+supabase/tap/supabase-beta
+
+tidy-html5
+
+tree-sitter
+
+unbound
+├── libevent
+│   └── openssl@3
+│       └── ca-certificates
+├── libnghttp2
+└── openssl@3
+    └── ca-certificates
+
+unibilium
+
+unixodbc
+└── libtool
+    └── m4
+
+usage
+
+vde
+
+volta
+
+wangle
+├── double-conversion
+├── fizz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libsodium
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@3
+│       └── ca-certificates
+├── lz4
+├── openssl@3
+│   └── ca-certificates
+└── zstd
+    ├── lz4
+    └── xz
+
+watchman
+├── edencommon
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fb303
+│   │   ├── fbthrift
+│   │   │   ├── double-conversion
+│   │   │   ├── fizz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── wangle
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fizz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── folly
+│   │   │   │   │   │   ├── boost
+│   │   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   │   └── zstd
+│   │   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │   │       └── xz
+│   │   │   │   │   │   ├── double-conversion
+│   │   │   │   │   │   ├── fmt
+│   │   │   │   │   │   ├── gflags
+│   │   │   │   │   │   ├── glog
+│   │   │   │   │   │   │   └── gflags
+│   │   │   │   │   │   ├── libevent
+│   │   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   │   ├── libsodium
+│   │   │   │   │   │   ├── lz4
+│   │   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   │   ├── snappy
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── xxhash
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── fbthrift
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── wangle
+│   │   │   ├── double-conversion
+│   │   │   ├── fizz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── xxhash
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   └── openssl@3
+│       └── ca-certificates
+├── fb303
+│   ├── fbthrift
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── wangle
+│   │   │   ├── double-conversion
+│   │   │   ├── fizz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── folly
+│   │   │   │   │   ├── boost
+│   │   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   │   ├── xz
+│   │   │   │   │   │   └── zstd
+│   │   │   │   │   │       ├── lz4
+│   │   │   │   │   │       └── xz
+│   │   │   │   │   ├── double-conversion
+│   │   │   │   │   ├── fmt
+│   │   │   │   │   ├── gflags
+│   │   │   │   │   ├── glog
+│   │   │   │   │   │   └── gflags
+│   │   │   │   │   ├── libevent
+│   │   │   │   │   │   └── openssl@3
+│   │   │   │   │   │       └── ca-certificates
+│   │   │   │   │   ├── libsodium
+│   │   │   │   │   ├── lz4
+│   │   │   │   │   ├── openssl@3
+│   │   │   │   │   │   └── ca-certificates
+│   │   │   │   │   ├── snappy
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── xxhash
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   └── openssl@3
+│       └── ca-certificates
+├── fbthrift
+│   ├── double-conversion
+│   ├── fizz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libsodium
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── fmt
+│   ├── folly
+│   │   ├── boost
+│   │   │   ├── icu4c@78
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── double-conversion
+│   │   ├── fmt
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── libsodium
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   ├── snappy
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── wangle
+│   │   ├── double-conversion
+│   │   ├── fizz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── folly
+│   │   │   │   ├── boost
+│   │   │   │   │   ├── icu4c@78
+│   │   │   │   │   ├── xz
+│   │   │   │   │   └── zstd
+│   │   │   │   │       ├── lz4
+│   │   │   │   │       └── xz
+│   │   │   │   ├── double-conversion
+│   │   │   │   ├── fmt
+│   │   │   │   ├── gflags
+│   │   │   │   ├── glog
+│   │   │   │   │   └── gflags
+│   │   │   │   ├── libevent
+│   │   │   │   │   └── openssl@3
+│   │   │   │   │       └── ca-certificates
+│   │   │   │   ├── libsodium
+│   │   │   │   ├── lz4
+│   │   │   │   ├── openssl@3
+│   │   │   │   │   └── ca-certificates
+│   │   │   │   ├── snappy
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libsodium
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── fmt
+│   │   ├── folly
+│   │   │   ├── boost
+│   │   │   │   ├── icu4c@78
+│   │   │   │   ├── xz
+│   │   │   │   └── zstd
+│   │   │   │       ├── lz4
+│   │   │   │       └── xz
+│   │   │   ├── double-conversion
+│   │   │   ├── fmt
+│   │   │   ├── gflags
+│   │   │   ├── glog
+│   │   │   │   └── gflags
+│   │   │   ├── libevent
+│   │   │   │   └── openssl@3
+│   │   │   │       └── ca-certificates
+│   │   │   ├── libsodium
+│   │   │   ├── lz4
+│   │   │   ├── openssl@3
+│   │   │   │   └── ca-certificates
+│   │   │   ├── snappy
+│   │   │   ├── xz
+│   │   │   └── zstd
+│   │   │       ├── lz4
+│   │   │       └── xz
+│   │   ├── gflags
+│   │   ├── glog
+│   │   │   └── gflags
+│   │   ├── libevent
+│   │   │   └── openssl@3
+│   │   │       └── ca-certificates
+│   │   ├── lz4
+│   │   ├── openssl@3
+│   │   │   └── ca-certificates
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── xxhash
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── fmt
+├── folly
+│   ├── boost
+│   │   ├── icu4c@78
+│   │   ├── xz
+│   │   └── zstd
+│   │       ├── lz4
+│   │       └── xz
+│   ├── double-conversion
+│   ├── fmt
+│   ├── gflags
+│   ├── glog
+│   │   └── gflags
+│   ├── libevent
+│   │   └── openssl@3
+│   │       └── ca-certificates
+│   ├── libsodium
+│   ├── lz4
+│   ├── openssl@3
+│   │   └── ca-certificates
+│   ├── snappy
+│   ├── xz
+│   └── zstd
+│       ├── lz4
+│       └── xz
+├── gflags
+├── glog
+│   └── gflags
+├── libevent
+│   └── openssl@3
+│       └── ca-certificates
+├── openssl@3
+│   └── ca-certificates
+├── pcre2
+└── python@3.14
+    ├── mpdecimal
+    ├── openssl@3
+    │   └── ca-certificates
+    ├── sqlite
+    │   └── readline
+    ├── xz
+    └── zstd
+        ├── lz4
+        └── xz
+
+webp
+├── giflib
+├── jpeg-turbo
+├── libpng
+└── libtiff
+    ├── jpeg-turbo
+    ├── xz
+    └── zstd
+        ├── lz4
+        └── xz
+
+xorgproto
+
+xxhash
+
+xz
+
+tophat/bar/yvm
+└── node
+    ├── brotli
+    ├── c-ares
+    ├── icu4c@78
+    ├── libnghttp2
+    ├── libnghttp3
+    ├── libngtcp2
+    │   └── openssl@3
+    │       └── ca-certificates
+    ├── libuv
+    ├── openssl@3
+    │   └── ca-certificates
+    ├── simdjson
+    ├── sqlite
+    │   └── readline
+    ├── uvwasi
+    │   └── libuv
+    └── zstd
+        ├── lz4
+        └── xz
+
+zlib
+
+zstd
+├── lz4
+└── xz
